@@ -4,5 +4,6 @@ public class Main {
         System.out.println("maggy potato");
         System.out.println("maggy potat2222o");
         System.out.println("Commento ------------------");
+        System.out.println("We will create calculator instead");
     }
 }
