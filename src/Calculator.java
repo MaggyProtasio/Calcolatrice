@@ -1,6 +1,6 @@
 public class Calculator {
-    private int n1;
-    private int n2;
+    private Integer n1;
+    private Integer n2;
     private String operatore;
     public int Somma(int a, int b) {
         return n1+n2;
@@ -13,16 +13,16 @@ public class Calculator {
         return n2;
     }
 
-    public void setN2(int n2) {
-        this.n2 = n2;
-    }
-
     public int getN1() {
         return n1;
     }
 
-    public void setN1(int n1) {
-        this.n1 = n1;
+    public void setN(int n) {
+        if(this.n1.equals(null)) {
+            this.n1 = n;
+        }else{
+            this.n2 = n;
+        }
     }
 
     public String getOperatore() {
@@ -43,6 +43,8 @@ public class Calculator {
                 risultato = Sottrazione(n1,n2);
                 break;
         }
+        this.n1 = null;
+        this.n2 = null;
         return risultato;
     }
 }
