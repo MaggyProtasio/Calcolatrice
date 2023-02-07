@@ -33,7 +33,7 @@ public class Calculator {
         this.operatore = operatore;
     }
 
-    public int uguale (){
+    public Integer uguale (){
         int risultato = 0;
         switch(operatore){
             case "+":
