@@ -18,7 +18,7 @@ public class Calculator {
     }
 
     public void setN(int n) {
-        if(this.n1.equals(null)) {
+        if(this.n1 == null) {
             this.n1 = n;
         }else{
             this.n2 = n;
