@@ -169,7 +169,7 @@ public class Main extends JFrame {
         beq1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 l.setText("");
-                aggiornaTesto(calculator.uguale()).toString();
+                aggiornaTesto(calculator.uguale().toString());
             }
         });
 
